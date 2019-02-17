@@ -30,7 +30,9 @@ class WPBlockInstaller extends LibraryInstaller {
 	 * @return string
 	 */
 	public function getInstallPath( PackageInterface $package ) {
-		return 'blocks';
+		$name = explode( '/', $package->getName() );
+
+		return "blocks/{$name[0]}";
 	}
 
 	/**
