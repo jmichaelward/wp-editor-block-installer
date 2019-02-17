@@ -1,0 +1,28 @@
+{
+    "name": "jmichaelward/wp-editor-block-installer",
+    "description": "Composer installer for custom WordPress editor block components.",
+    "type": "composer-plugin",
+    "license": "gpl-2.0-or-later",
+    "authors": [
+        {
+            "name": "Jeremy Ward",
+            "email": "jeremy@jmichaelward.com"
+        }
+    ],
+    "require": {
+        "composer-plugin-api": "^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "JMichaelWard\\ComposerInstaller\\": "src/"
+        }
+    },
+    "extra": {
+        "class": [
+            "JMichaelWard\\ComposerInstaller\\WPEditorBlockInstallerPlugin"
+        ]
+    }
+}
